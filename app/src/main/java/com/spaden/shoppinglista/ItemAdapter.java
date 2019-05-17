@@ -95,6 +95,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ListItemHolder
             mQty = (TextView)
                     view.findViewById(R.id.textViewStatsuQty);
             btnDel = view.findViewById(R.id.btnDelete);
+
             view.setClickable(true);
             view.setOnClickListener(this);
 
@@ -104,13 +105,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ListItemHolder
         @Override
         public void onClick(View view) {
 
-            mMainActivity.showItem(getAdapterPosition());
+
 
         }
 
 
     }
-
-
 
 }
